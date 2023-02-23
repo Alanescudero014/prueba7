@@ -1,0 +1,10 @@
+body{
+    background: aqua;
+}
+.fondo{
+    background: snow;
+    margin-top: 15px;
+    border: 2px solid silver;
+    height: 550px;
+   
+}
