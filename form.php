@@ -7,8 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    
-<label for="gender">Pregunta 1: </label>
+
+<script>
+    var hora1 = ("10:30:00").split(":"),
+    hora2 = ("10:00:00").split(":"),
+    t1 = new Date(),
+    t2 = new Date();
+ 
+t1.setHours(hora1[0], hora1[1], hora1[2]);
+t2.setHours(hora2[0], hora2[1], hora2[2]);
+ 
+//Aquí hago la resta
+t1.setHours(t1.getHours() - t2.getHours(), t1.getMinutes() - t2.getMinutes(), t1.getSeconds() - t2.getSeconds());
+ 
+//Imprimo el resultado
+document.body.innerHTML = "La diferencia es de: " + (t1.getHours() ? t1.getHours() + (t1.getHours() > 1 ? " horas" : " hora") : "") + (t1.getMinutes() ? ", " + t1.getMinutes() + (t1.getMinutes() > 1 ? " minutos" : " minuto") : "") + (t1.getSeconds() ? (t1.getHours() || t1.getMinutes() ? " y " : "") + t1.getSeconds() + (t1.getSeconds() > 1 ? " segundos" : " segundo") : "");
+ 
+
+</script>
+<br><label for="gender">Pregunta 1: </label>
 <input type="radio" id="a1" name="res1" value="1" onclick="ar1()">Rojo
 <input type="radio" id="b1" name="res1" value="2"  onclick="br1()">Azul
 <input type="radio" id="c1" name="res1" value="3"  onclick="cr1()">Amarillo
