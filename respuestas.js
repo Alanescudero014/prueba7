@@ -1,3 +1,4 @@
+
 if(localStorage.res1 == null){
     res1 = 0;
 }else{
