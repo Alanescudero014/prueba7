@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Stackfindover: Sign in</title>
-  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <link rel="stylesheet"href="estilos4.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <style>
@@ -75,16 +75,16 @@
                     <label for="password">Contraseña</label>
                     
                   </div>
-                  <input type="password" name="ingresoContrasena" required>
+                  <input type="password" name="ingresoUsuario" required>
                 </div>
                 <div class="reset-pass">
-                      <a class="ssolink" href="vistas/recuperarc.php">¿Olvidaste tu contraseña?</a>
+                      <a class="ssolink" href="#">¿Olvidaste tu contraseña?</a>
                     </div>
                 <div class="field padding-bottom--24">
                   <input type="submit" name="submit" value="Continuar">
                 </div>
                 <div class="field">
-                  <a class="ssolink" href="vistas/sesion.php">Crear una cuenta</a>
+                  <a class="ssolink" href="#">Crear una cuenta</a>
                 </div>
               </form>
             </div>
@@ -94,6 +94,7 @@
               <span><a href="#">© 2023 Aeropuerto Internacional Felipe Ángeles.</a></span>
               <span><a href="#">Contacto</a></span>
               <span><a href="#">Privacidad y Terminos</a></span>
+              
             </div>
           </div>
         </div>
