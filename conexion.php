@@ -1,7 +1,7 @@
 <?php
 
 $usuarios = "root";
-$bd = "prueba";
+$bd = "formulario";
 $servidor = "localhost";
 
 
