@@ -45,6 +45,7 @@ $("#addRow").click(function () {
 $input++;
 var html = '';
 html += '<div id="inputFormRow">';
+html += '<input type="text" class="form-control m-input" placeholder="Ingresa la pregunta" name="texto_pregunta" id="texto_pregunta" required><br>';
 html += '<div class="input-group mb-3">';
 html += '<input type="text" name="title[]" class="form-control m-input" placeholder="Ingrese titulo" autocomplete="off">';
 html += '<div class="input-group-append">';

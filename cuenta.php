@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Stackfindover: Sign in</title>
+  <title>Registro de usuario</title>
   <link rel="stylesheet" type="text/css" href="estilos.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/AIFA.png">
 </head>
 <style>
       footer{
@@ -21,6 +23,8 @@
         <a class="navbar-brand p-2">
             <img src="img/logo.svg" height="60rem"></a>
         <div class="navbar-nav">
+        <a style="color: white;" class="btn btn-outline-primary" href="index.php"><i
+                class="fa-solid fa-rotate-left"></i> ATRÁS</a>
         </div>
   </header>
   <div class="login-root">
@@ -57,6 +61,7 @@
           </div>
         </div>
       </div>
+      <script src="texto.js"></script>
       <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
         <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
           <h1>AIFA</h1>
@@ -64,27 +69,53 @@
         <div class="formbg-outer">
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
-              <span class="padding-bottom--15">Inicio de sesión</span>
+              <span class="padding-bottom--15">Registro de usuario</span>
               <form id="stripe-login" method="post" action="modelo/entrar.php">
                 <div class="field padding-bottom--24">
-                  <label for="email">Correo</label>
-                  <input type="email" name="ingresoUsuario" required>
+                  
+                  <input type="text " name="nombre"  placeholder="Nombre" required onkeypress="return Solo_Texto(event);"><!-- Ingreso del correo del usuario -->
                 </div>
                 <div class="field padding-bottom--24">
                   <div class="grid--50-50">
-                    <label for="password">Contraseña</label>
                     
                   </div>
-                  <input type="password" name="ingresoContrasena" required>
+                  <input type="number" name="empleado" placeholder="No. Empleado" required onkeypress="return Solo_Texto(event);"><!-- Ingreso de la contraseña asignada -->
                 </div>
-                <div class="reset-pass">
-                      <a class="ssolink" href="vistas/recuperarc.php">¿Olvidaste tu contraseña?</a>
-                    </div>
+
                 <div class="field padding-bottom--24">
-                  <input type="submit" name="submit" value="Continuar">
+                  <div class="grid--50-50">
+                    
+                  </div>
+                  <input type="text" name="direccion" placeholder="Dirección" required onkeypress="return Solo_Texto(event);">
                 </div>
-                <div class="field">
-                  <a class="ssolink" href="cuenta.php">Crear una cuenta</a>
+
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    
+                  </div>
+                  <input type="text" name="subdireccion" placeholder="Subdirección" required onkeypress="return Solo_Texto(event);"><!-- Ingreso de la contraseña asignada -->
+                </div>
+
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    
+                  </div>
+                  <input type="text" name="gerencia"  placeholder="Gerencia" required onkeypress="return Solo_Texto(event);"><!-- Ingreso de la contraseña asignada -->
+                </div>
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    
+                  </div>
+                  <input type="text" name="cargo"  placeholder="Cargo" required onkeypress="return Solo_Texto(event);"><!-- Ingreso de la contraseña asignada -->
+                </div>
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    
+                  </div>
+                  <input type="text" name="correo"  placeholder="Correo " required onkeypress="return Solo_Texto(event);"><!-- Ingreso de la contraseña asignada -->
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="Crear"><!-- Botón para enviar datos -->
                 </div>
               </form>
             </div>
