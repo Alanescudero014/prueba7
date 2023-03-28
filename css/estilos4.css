@@ -81,7 +81,7 @@ nav ul li a{
 .select{
   background: white;
   padding: 10px 30px;
-  color: #002b49;
+  color: #111F2D;
   border-radius: 20px;
 }
 
@@ -133,7 +133,7 @@ main{
   justify-content: center;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background-color: rgba( 17, 41, 35);
+  background-color: rgba( 17, 31, 45);
 
 }
 
@@ -173,7 +173,7 @@ main{
 
 .caja__trasera button:hover{
   background: #fff;
-  color: #002b49;
+  color: #111F2D;
 }
 
 /*Formularios*/
@@ -203,7 +203,7 @@ main{
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
-  color: #002b49;
+  color: #111F2D;
 }
 
 .contenedor__login-register form input{
@@ -221,7 +221,7 @@ main{
   margin-top: 40px;
   border: none;
   font-size: 14px;
-  background: #002b49;
+  background: #111F2D;
   font-weight: 600;
   cursor: pointer;
   color: white;
@@ -316,7 +316,7 @@ footer{
 
 .box__footer h2{
   margin-bottom: 30px;
-  color: #242424;
+  color: #111F2D;
   font-weight: 700;
 }
 
