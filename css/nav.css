@@ -139,3 +139,52 @@
   @media (max-width: 580px) {
     .nav { overflow: auto; }
   }
+
+  @media only screen and (max-width: 380px) {
+    img, p{
+      padding: 10px 20px; 
+      margin: auto;
+      width: 100%;
+      font-size: 50%;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    img, p, a{
+      padding: 10px 20px; 
+      margin: auto;
+      width: 80%;
+      font-size: 80%;
+      text-align: center;
+    }
+  }
+
+
+img {
+     width: 100%;
+     object-fit: cover;
+     object-position: bottom;
+     align-items: center;
+     border-top-left-radius: 20px;
+    }
+
+    div.polaroid {
+      width: 30%;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    div.contenedor {
+       width: 100%;
+       text-align: center;
+       padding: 10px 20px; 
+     }
+
+     h1 {
+      font-family: Helvetica ,Arial , ;
+     }
+
+     p{
+      font-family: sans-serif, 'Times New Roman', Times, serif;
+     }
